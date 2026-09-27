@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Northstar Studio — Customer Site Demo</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, sans-serif;
+            background: #f6f8fc;
+            color: #172033;
+        }
+
+        header {
+            padding: 22px 8%;
+            background: #101827;
+            color: #fff;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 24px;
+        }
+
+        .hero {
+            background: #fff;
+            border-radius: 24px;
+            padding: 44px;
+            box-shadow: 0 12px 40px #0f172a12;
+        }
+
+        .pill {
+            display: inline-block;
+            padding: 6px 10px;
+            border-radius: 99px;
+            background: #e8f0ff;
+            color: #2563eb;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 44px;
+            max-width: 700px;
+            margin: 18px 0 10px;
+        }
+
+        .sub {
+            color: #64748b;
+            max-width: 650px;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+            margin-top: 28px;
+        }
+
+        .card {
+            padding: 22px;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            background: #fbfdff;
+        }
+
+        @media (max-width: 700px) {
+            h1 {
+                font-size: 34px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <strong>Northstar Studio</strong>
+        <span style="opacity:.65">
+            / external customer website
+        </span>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <span class="pill">
+                SECOND-ORIGIN DEMO
+            </span>
+
+            <h1>
+                Turn website visitors into qualified leads.
+            </h1>
+
+            <p class="sub">
+                This page is deliberately served from
+                <code>127.0.0.1:5500</code>.
+                The FlyRank API and widget are served from
+                <code>127.0.0.1:8000</code>,
+                proving the cross-origin embed flow.
+            </p>
+
+            <div class="grid">
+
+                <div class="card">
+                    <strong>
+                        Fast capture
+                    </strong>
+
+                    <p>
+                        Collect the information your sales team needs.
+                    </p>
+                </div>
+
+                <div class="card">
+
+                    <strong>
+                        Protected pipeline
+                    </strong>
+
+                    <p>
+                        Validation, rate limiting, spam protection
+                        and enrichment happen server-side.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div style="margin-top:30px">
+
+                <h2>
+                    Request a demo
+                </h2>
+
+                <p style="color:#64748b">
+                    The form below is the embedded widget loaded
+                    by one script tag.
+                </p>
+
+                <!-- FlyRank Embedded Widget -->
+                <script src="http://127.0.0.1:8000/widget.v1.js?id=1de78113-97c5-4dea-a549-f5bcbbed08c5">
+                </script>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
